@@ -34,7 +34,7 @@ $ conda activate tf-metal-env
 
 嗯？这系统版本？
 
-又查了点资料，发现获取系统信息的方法在 `~/miniforge/envs/tf-metal-env/lib/python3.8/site-packages/pip/_vendor/packaging/tags.py` 文件中，打开定位到第 429 行，
+又查了点资料，发现 pip 获取系统信息的方法在 `~/miniforge/envs/tf-metal-env/lib/python3.8/site-packages/pip/_vendor/packaging/tags.py` 文件中，打开定位到第 429 行，
 
 ```python3
 version_str, _, cpu_arch = platform.mac_ver() 
